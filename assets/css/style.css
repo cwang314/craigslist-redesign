@@ -1,0 +1,118 @@
+/*
+TABLE OF CONTENTS
+------------------
+1. Basics, layout
+2. Divs
+2. Fonts
+3. Colors
+*/
+
+/* 1. Basics, layout */
+.clear {
+  clear: both;
+}
+
+.img-scaled-w {
+  width: 100%;
+}
+
+.img-scaled-h {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+/* 2. Divs */
+.left-sidebar {
+  display: inline-block;
+  position: relative;
+  /*float: left;*/
+  height: 100%;
+  width: 200px;
+  padding: 10px;
+}
+
+.contact-info-box {
+  /*width: */
+  position: absolute;
+  
+}
+
+.main-content {
+  display: inline-block;
+  position: relative;
+  /*clear: both;*/
+}
+
+.gallery {
+  position: relative;
+}
+
+.main-image {
+  /*display: block;*/
+  position: relative;
+  /*position: absolute;*/
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  /*margin: 10px;*/
+}
+
+.thumbnail-row {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 10px;
+}
+
+.thumbnail {
+  display: inline-block;
+  /*margin: 5px;*/
+  position: relative;
+  /*float: left;*/
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  overflow: hidden;
+  text-align: center;
+}
+
+.thumbnail-box {
+  display: inline-block;
+  margin: 5px;
+}
+
+.description-box {
+
+}
+
+.description {
+  margin: 10px;
+}
+
+.right-sidebar {
+  display: inline-block;
+  position: relative;
+  /*float: right;*/
+}
+
+
+/* Fonts */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* Colors */
+/*
+Purple color scheme found here: http://www.colorcombos.com/color-schemes/171/ColorCombo171.html
+#320f41
+#5f1669
+#8a7595
+#a3a3a3
+#ffffff
+*/
