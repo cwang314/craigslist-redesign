@@ -21,18 +21,109 @@ TABLE OF CONTENTS
 }
 
 body {
-  box-sizing: border-box;
+  margin: 0px;
+}
+
+/* Imported fonts */
+@font-face {
+  font-family: 'Klinic Medium';
+  src: url(../fonts/KlinicSlabMedium.otf);
 }
 
 
 /* 2. Divs */
-.left-sidebar {
+#navbar {
+  width: 100%;
+  padding: 10px 0px;
+  position: fixed;
+  background: #8a7595;
+  z-index: 100;
+}
+
+#logo {
+  display: inline-block;
+  float: left;
+  margin: 0px 10px;
+  color: #ffffff;
+  line-height: 30px;
+  font-family: 'Klinic Slab Medium', 'Georgia', serif;
+}
+
+#search-field {
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  border-style: none;
+  line-height: 30px;
+  width: 300px;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+
+}
+
+#search-button {
+  /* COLOR/TYPOGRAPHY CHANGES NEEDED */
   display: inline-block;
   position: relative;
-  /*float: left;*/
-  height: 100%;
+  margin: 0px 5px 0px 0px;
+  padding: 0px 15px;
+  line-height: 30px;
+  left: -5px;
+  /*padding: 0px 10px;*/
+  background-color: #320f41; /* FIX THIS COLOR */
+  color: white;
+  border: 0px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+}
+
+#search-button:hover {
+  background-color: #5f1669;
+  cursor: pointer;
+}
+
+.left-sidebar {
+  position: fixed; 
+  background-color: rgba(0, 0, 0, 0.10);
+  padding: 15px;
   width: 200px;
-  padding: 10px;
+  height: 100%;
+}
+
+.left-sidebar-item {
+  margin-left: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/*.right-sidebar {
+  display: inline-block;
+  position: relative;
+  /*float: right;*/
+/*}*/
+
+
+.right-sidebar {
+  display: inline-block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.10);
+  padding: 15px;
+  width: 200px;
+  height: 100%;
+}
+
+.right-sidebar-item {
+  margin-left: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .contact-info-box {
@@ -42,9 +133,9 @@ body {
 }
 
 .main-content {
-  display: inline-block;
-  position: relative;
-  /*clear: both;*/
+  width: 700px;
+  margin: 0px auto;
+  padding: 100px 0px;
 }
 
 .gallery {
@@ -52,13 +143,16 @@ body {
 }
 
 .main-image {
-  /*display: block;*/
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*position: relative;*/
   /*position: absolute;*/
   width: 600px;
   height: 400px;
   object-fit: cover;
   overflow: hidden;
+
   /*margin: 10px;*/
 }
 
@@ -102,17 +196,20 @@ body {
 
 
 /* Fonts */
-body {
-  font-family: 'Lato', sans-serif;
+.description-box {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.description {
+  margin: 10px;
+  color: #000000;
 }
 
 
-/* Colors */
-/*
-Purple color scheme found here: http://www.colorcombos.com/color-schemes/171/ColorCombo171.html
-#320f41
-#5f1669
-#8a7595
-#a3a3a3
-#ffffff
-*/
+/* Fonts */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
