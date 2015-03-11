@@ -97,7 +97,7 @@ body {
 .left-sidebar {
   position: fixed; 
   background-color: rgba(0, 0, 0, 0.10);
-  padding: 15px;
+  padding: 75px 15px;
   width: 200px;
   height: 100%;
 }
@@ -140,8 +140,8 @@ body {
 
 .main-content {
   width: 700px;
-  margin: 0px auto;
-  padding: 100px 0px;
+  padding: 100px 20px;
+  margin-left: 230px;
 }
 
 .gallery {
