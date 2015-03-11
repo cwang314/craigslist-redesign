@@ -26,6 +26,7 @@ body {
 
 /* Imported fonts */
 @font-face {
+<<<<<<< HEAD
   font-family: 'Klinic Slab Medium';
   src: url(../fonts/KlinicSlabMedium.otf);
 }
@@ -33,6 +34,10 @@ body {
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
+=======
+  font-family: 'Klinic Medium';
+  src: url(../fonts/KlinicSlabMedium.otf);
+>>>>>>> 874d819dfd3b1187a46e33bdcd084ef7a26db518
 }
 
 
@@ -52,13 +57,20 @@ body {
   color: #ffffff;
   line-height: 30px;
   font-family: 'Klinic Slab Medium', 'Georgia', serif;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+>>>>>>> 874d819dfd3b1187a46e33bdcd084ef7a26db518
 }
 
 #search-field {
   display: inline-block;
   margin: 0px 0px 0px 10px;
+<<<<<<< HEAD
   padding: 0px 10px;
+=======
+  padding: 0px 5px;
+>>>>>>> 874d819dfd3b1187a46e33bdcd084ef7a26db518
   border-radius: 5px;
   border-style: none;
   line-height: 30px;
@@ -79,10 +91,17 @@ body {
   padding: 0px 15px;
   line-height: 30px;
   left: -5px;
+<<<<<<< HEAD
   background-color: #320f41; /* FIX THIS COLOR */
   color: white;
   border: 0px;
 
+=======
+  /*padding: 0px 10px;*/
+  background-color: #320f41; /* FIX THIS COLOR */
+  color: white;
+  border: 0px;
+>>>>>>> 874d819dfd3b1187a46e33bdcd084ef7a26db518
   border-top-right-radius: 5px;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 5px;
@@ -97,7 +116,11 @@ body {
 .left-sidebar {
   position: fixed; 
   background-color: rgba(0, 0, 0, 0.10);
+<<<<<<< HEAD
   padding: 75px 15px;
+=======
+  padding: 15px;
+>>>>>>> 874d819dfd3b1187a46e33bdcd084ef7a26db518
   width: 200px;
   height: 100%;
 }
@@ -213,3 +236,12 @@ body {
   color: #000000;
 }
 
+<<<<<<< HEAD
+=======
+
+/* Fonts */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+>>>>>>> 874d819dfd3b1187a46e33bdcd084ef7a26db518
