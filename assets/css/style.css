@@ -20,7 +20,14 @@ TABLE OF CONTENTS
   height: 100%;
 }
 
+.img-scaled-wh {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 body {
+  padding: 0px;
   margin: 0px;
 }
 
@@ -87,11 +94,19 @@ body {
   border-top-left-radius: 0px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 0px;
+
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #search-button:hover {
   background-color: #5f1669;
   cursor: pointer;
+
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .left-sidebar {
@@ -109,18 +124,13 @@ body {
   display: block;
 }
 
-/*.right-sidebar {
-  display: inline-block;
-  position: relative;
-  /*float: right;*/
-/*}*/
-
-
 .right-sidebar {
   display: inline-block;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.10);
-  padding: 15px;
+  top: 0px;
+  right: 0px;
+  background-color: white;
+  padding: 75px 15px;
   width: 200px;
   height: 100%;
 }
@@ -139,9 +149,10 @@ body {
 }
 
 .main-content {
+  position: relative;
   width: 700px;
-  padding: 100px 20px;
-  margin-left: 230px;
+  padding: 75px 25px;
+  left: 230px;
 }
 
 .gallery {
@@ -150,23 +161,28 @@ body {
 
 .main-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   /*position: relative;*/
   /*position: absolute;*/
-  width: 600px;
+  width: 595px;
   height: 400px;
-  object-fit: cover;
-  overflow: hidden;
-
-  /*margin: 10px;*/
+  float: right;
 }
 
 .thumbnail-row {
   display: block;
-  width: 100%;
-  height: 100px;
-  margin: 10px;
+  /*width: 100%;*/
+  /*height: 100px;*/
+  margin-top: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.thumbnail-row-vertical {
+  display: inline-block;
+  width: 105px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .thumbnail {
@@ -181,34 +197,8 @@ body {
   text-align: center;
 }
 
-.thumbnail-box {
-  display: inline-block;
-  margin: 5px;
+/*.description-box {
+  margin-top: 10px;
+  padding: 20px 0px;
 }
-
-.description-box {
-
-}
-
-.description {
-  margin: 10px;
-}
-
-.right-sidebar {
-  display: inline-block;
-  position: relative;
-  /*float: right;*/
-}
-
-
-/* Fonts */
-.description-box {
- display: block;
- margin-left: auto;
- margin-right: auto;
-}
-
-.description {
-  margin: 10px;
-  color: #000000;
-}
+*/
