@@ -3,16 +3,14 @@
 <head>
   <title>Craigslist, but better</title>
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="assets/css/index-style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/img/tab-icon.ico">
 </head>
 <body>
 
   <!-- NAV BAR -->
   <div id="navbar">
-    <div id="logo">craigslist</div>
+    <div id="logo"><a href="index.html">craigslist</a></div>
     <div id="search"> 
       <div class="button" id="select-category-button">
         Select Category
@@ -53,19 +51,24 @@
   </div>
 
   <!-- MAIN CONTENT -->
-  <div class="main-content">
+  <div class="main-page-content">
 
     <h1>What's New</h1>
     <div class="gallery">
-      <div class="hero-image">
-        <img class="img-scaled-wh" src="assets/img/house-main.jpg">
-        <div class="hero-image-description"><h1>Beautiful 9br/5bath in Picturesque Waterfront Location</h1></div>
+      <div class="main-image">
+        <a href="item.html">
+          <img class="img-scaled-wh" src="assets/img/house-main.jpg">
+          <div class="main-image-gradient"></div>
+          <div class="title">
+            <h1>Beautiful 9br/5bath in Picturesque Waterfront Location</h1>
+          </div>
+        </a>
       </div>
     </div>
-    <h1>Browse Categories</h1>
     <div class="clearfix categories">
+      <h1>Browse Categories</h1>
       <div class="left category">
-        <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/grass.jpg" alt="Community" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">Community</div>
           <div class="category-icon">
@@ -74,7 +77,7 @@
         </div>
       </div>
       <div class="right category">
-        <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/love_matchsticks-wide.jpg" alt="Personals" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">Personals</div>
           <div class="category-icon">
@@ -83,7 +86,7 @@
         </div>
       </div>
       <div class="left category">
-        <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/house.jpg" alt="Housing" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">Housing</div>
           <div class="category-icon">
@@ -92,7 +95,7 @@
         </div>
       </div>
       <div class="right category">
-        <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/sale.jpg" alt="For Sale" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">For Sale</div>
           <div class="category-icon">
@@ -101,7 +104,7 @@
          </div>
       </div>
       <div class="left category">
-        <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/office-work.jpg" alt="Jobs" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">Jobs</div>
           <div class="category-icon">
@@ -110,7 +113,7 @@
         </div>
       </div>
       <div class="right category">
-        <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/discussion.jpg" alt="Discussion Forums" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">Discussion Forums</div>
           <div class="category-icon">
@@ -119,7 +122,7 @@
          </div>
       </div>
       <div class="left category">
-        <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/services.jpg" alt="Services" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">Services</div>
           <div class="category-icon">
@@ -128,7 +131,7 @@
         </div>
       </div>
       <div class="right category">
-        <img src="assets/img/gigs.jpg" alt="" class="img-scaled-wh">
+        <img src="assets/img/gigs.jpg" alt="Gigs" class="img-scaled-wh">
         <div class="overlay">
           <div class="category-title">Gigs</div>
           <div class="category-icon">
@@ -145,7 +148,7 @@
       <tbody>
         <tr>
           <td class="footer-column-spacer"></td>
-          <td class="footer-columns footer-column-title">How to use Craigslist</td>
+          <td class="footer-columns footer-column-title">Using Craigslist</td>
           <td class="footer-column-spacer"></td>
           <td class="footer-columns footer-column-title">About Us</td>
           <td class="footer-column-spacer"></td>
@@ -186,6 +189,7 @@
         </tr>
       </tbody>
     </table>
+    <p>Icons from <a href="http://thenounproject.com/">thenounproject.com</a></p>
   </footer>
 </body>
 </html>
