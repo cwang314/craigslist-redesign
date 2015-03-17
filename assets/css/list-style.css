@@ -1,0 +1,299 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.vertical-line {
+  border-right: 1.5px dotted;
+  position: fixed;
+  margin-left: 240px;
+  margin-top: 105px;
+  height: calc(100% - 292px);
+  color: rgba(0, 0, 0, 0.50);
+}
+
+#sidebar {
+  position: fixed;
+  top: 60px;
+  left: 10px;
+  height: 100%;
+  width: 230px;
+  font-size: 20px;
+  padding-top: 40px;
+  font-weight: 200;
+} 
+
+.sideElement {
+  margin: 15px 10px 10px 10px;
+  padding: 0px 10px 0 10px;
+}
+
+#side-title {
+  font-weight: 400;
+}
+
+#side-title-underline {
+  width: 179px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+  top: 7px;
+}
+
+#container {
+  margin-left: 230px;
+  width: calc(100% - 230px);
+  /* padding-top: 50px; */
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.list-item {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #D2D3DF; 
+  border-radius: 3px;
+  color: black;
+  display: inline-block;
+  margin: 50px 0 0 75px;
+}
+
+.list-item:nth-child(3) {
+  top: 12px;
+}
+
+.list-item:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#item-image {
+  width: 300px;
+  height: 200px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#item-title {
+  margin: 5px;
+}
+
+.item-tag {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.item-tag:hover {
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+#item-info {
+  width: 200px;
+  height: 55px;
+  margin-left: 5px;
+}
+
+#item-price {
+  position: absolute;
+  right: 5px;
+  bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#checkbox {
+  margin: 7px 7px 7px 0;
+}
+
+#housing-type {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.bed-text-field {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+#bed {
+  font-size: 20px;
+}
+
+#bed-input {
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.sideElement#price {
+  position: relative;
+  padding: 10px 10px 30px 10px;
+}
+
+#slider-line {
+  width: 150px;
+  height: 5px;
+  background: gray;
+  border-radius: 2.5px;
+  margin-top: 40px;
+}
+
+#slider-line-fill {
+  width: 70px;
+  height: 5px;
+  background-color: #726482;
+  position: relative;
+  top: -5px;
+  left: 25px;
+}
+
+.slider-bar {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 69px;
+}
+
+.slider-bar#left-slider {
+  position: absolute;
+  left: 30px;
+}
+
+.slider-bar#right-slider {
+  position: absolute;
+  left: 100px;
+}
+
+#left-slider-price {
+  font-size: 13px;
+  position: relative;
+  background-color: gray;
+  color: white;
+  top: -33px;
+  left: -18px;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+#right-slider-price {
+  font-size: 13px;
+  position: relative;
+  background-color: gray;
+  color: white;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 8px;
+  top: 20px;
+  left: -25px;
+}
+
+.slider-arrow {
+  height: 8px;
+  width: 8px;
+  transform: rotate(45deg);
+  background-color: gray;
+  position: absolute;
+}
+
+#left-slider .slider-arrow {
+    top: -11px;
+
+    left: 3px;
+}
+
+#right-slider .slider-arrow {
+    top: 20px;
+
+    left: 3px;
+}
+
+#page-bar {
+  margin-left: 230px;
+  width: calc(100% - 230px);
+  position: relative;
+  height: 75px;
+  top: 50px;
+}
+
+.direction {
+  margin: 2px;
+  margin-top: 30px;
+  background-color: #8a7595;
+  border-radius: 5px;
+  border-bottom: 1.5px solid #320f41;
+  padding: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  font-size: 10pt;
+  position: absolute;
+  z-index: 10;
+}
+
+.direction:hover {
+  background-color: #320f41;
+  cursor: pointer;
+}
+
+
+#next {
+    right: 78px;
+    top: 0px;
+}
+
+#prev {
+    left: 75px;
+    top: 0px;
+}
+
+.page-number {
+  text-align: center;
+  top: 45px;
+  position: relative;
+  width: 225px;
+  height: 20px;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 50;
+  font-size: 15px;
+}
+
+.page-number-line {
+  width: 600px;
+  height: 1px;
+  background-color: black;
+  margin: 0 auto;
+  position: relative;
+  top: 34px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

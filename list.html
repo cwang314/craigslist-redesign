@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Craigslist</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/css/basics.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+  <link rel="shortcut icon" href="assets/img/tab-icon.ico">
+	<link rel="stylesheet" type="text/css" href="assets/css/list-style.css" />
+</head>
+<body>
+	<!-- NAV BAR -->
+	<div id="navbar">
+	  <div id="logo"><a href="index.html">craigslist</a></div>
+	  <div id="search"> 
+	    <div class="button" id="select-category-button">
+	      Select Category
+	      <select id="select-category-dropdown">
+	        <option value="">Community</option>
+	        <option value="">Personal</option>
+	        <option value="">Housing</option>
+	        <option value="">For Sale</option>
+	        <option value="">Jobs</option>
+	        <option value="">Discussion Forums</option>
+	        <option value="">Services</option>
+	        <option value="">Gigs</option>
+	      </select>
+	    </div>
+	    <input type="text" placeholder="I'm looking for..." id="search-field" />
+	    <input type="submit" value="Search" class="button" id="search-button" />
+	  </div>
+	  <div id="account-info">
+	    <div class="button" id="post-button">Post to Craigslist</div>
+	    <div id="user-photo">
+	      <img class="img-scaled-wh" src="assets/img/user.png">
+	    </div>
+	    <div class="" id="username">Stuart Tusspot</div>
+	  </div>
+	</div>
+  	<div class="vertical-line"></div>
+	<div id="sidebar">
+		<div class="sideElement" id="side-title">Narrow Your Search
+			<div id="side-title-underline"></div>
+		</div>
+		<div class="sideElement" id="price">Price Range
+			<div id="slider-line"></div>
+			<div id="slider-line-fill"></div>
+			<div class="slider-bar" id="left-slider">
+				<div id="left-slider-price">100,000</div>
+				<div class="slider-arrow"></div>
+			</div>
+			<div class="slider-bar" id="right-slider">
+				<div id="right-slider-price">1,000,000</div>
+				<div class="slider-arrow"></div>
+			</div>
+		</div>
+		<div class="sideElement" id="bed">Bed / Bath
+			<div class="bed-text-field">
+				<input id="bed-input" type="text" placeholder="3">Bedrooms<br>
+				<input id="bed-input" type="text" placeholder="2">Bathrooms
+			</div>
+		</div>
+		<div class="sideElement" id="sort">Housing Type
+			<form id="housing-type">
+				<input id="checkbox" type="checkbox">Permanent<br>
+				<input id="checkbox" type="checkbox">Lease<br>
+				<input id="checkbox" type="checkbox">Apartment<br>
+				<input id="checkbox" type="checkbox">Fraternity<br>
+				<input id="checkbox" type="checkbox">Sorority<br>
+				<input id="checkbox" type="checkbox">Cooperative
+			</form>
+		</div>
+<!-- 		<div class="sideElement" id="pets">Pets
+			<form id="housing-type">
+				<input id="checkbox" type="checkbox">Cats OK<br>
+				<input id="checkbox" type="checkbox">Dogs OK
+			</form>
+		</div>
+ -->	</div>
+	<div id="page-bar">
+		<div class="page-number">Items 1 - 9 of 10,000 results</div>
+		<div class="page-number-line"></div>
+		<div class="direction" id="prev">&lt;&lt; Previous</div>
+   	 	<div class="direction" id="next">Next &gt;&gt;</div>
+   	</div>
+	<div id="container">
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://www.theamazingpics.com/wp-content/uploads/2013/05/Pretty-Tree-House-in-Japan.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath in North Berkeley close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Test Way Dr. Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$100,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://40.media.tumblr.com/tumblr_ls035n82MP1r3xutvo1_500.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath in bougie neighborhood close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Bougie Way Dr. Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$250,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://thejetlife.com/wp-content/uploads/2013/03/3-Kapalua-Place-maui-beach-house-3.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath beach-front property close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Beach Drive Way Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$500,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://www.trendir.com/house-design/wood-and-glass-mountain-house-with-trio-of-terraces-1.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath in mountains close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Mountain Way Ave. Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$750,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://www.hdwallpapersjpg.com/wp-content/uploads/2014/11/Alone-House-on-Mountain-HD-Wallpaper.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath in a valley close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Valley Court Dr. Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				200,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://cottageintheoaks.com/wp-content/uploads/41b4a58f4a003227850d8cf37d340470.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath winter cabin close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Winter Way Wavenue Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$349,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://welldonestuff.com/wp-content/uploads/2014/05/muskoka-boathouse-1.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath riverside property close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 River Road Rway Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$690,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://ad009cdnb.archdaily.net.s3.amazonaws.com/wp-content/uploads/2011/05/1304722440-6452-1000x671.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath desert property close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					3bed
+				</div>
+				<div class="item-tag">
+					2bath
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Desert Drive Dourt. Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$880,000
+			</div>
+		</div>
+		<div class="list-item">
+			<div id="item-image">
+				<img src="http://tinyhouselistings.com/wp-content/uploads/2013/02/image-2.jpg">
+			</div>
+			<div id="item-title">
+				Beautiful 3bd/2bath portable home close to the UC campus!
+			</div>
+			<div id="item-info">
+				<div class="item-tag">
+					15bed
+				</div>
+				<div class="item-tag">
+					hella baths
+				</div>
+				<div class="item-tag">
+					apartment
+				</div>
+				<div class="item-tag">
+					12345 Portable Pillow Pay Berkeley, CA
+				</div>
+			</div>
+			<div id="item-price">
+				$952,000
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+  <footer class="clearfix clear">
+    <table class="footer-table">
+      <tbody>
+        <tr>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-columns footer-column-title">Using Craigslist</td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-columns footer-column-title">About Us</td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-columns footer-column-title">Extras</td>
+        </tr>
+        <tr>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-column">
+            <ul>              
+              <li><a class="footer-link" href="">Help</a></li>
+              <li><a class="footer-link" href="">Personal safety tips</a></li>
+              <li><a class="footer-link" href="">Avoid scams and fraud</a></li>
+              <li><a class="footer-link" href="">Privacy</a></li>
+              <li><a class="footer-link" href="">Terms of use</a></li>
+              <li><a class="footer-link" href="">System status</a></li>
+            </ul>
+          </td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-column">
+            <ul>
+              <li><a class="footer-link" href="">About</a></li>
+              <li><a class="footer-link" href="">We're hiring in SF!</a></li>
+              <li><a class="footer-link" href="">Blog</a></li>
+              <li><a class="footer-link" href="">Craigslist open source</a></li>
+            </ul>          
+          </td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-column">
+            <ul>
+              <li><a class="footer-link" href="">Best of Craigslist</a></li>
+              <li><a class="footer-link" href="">Craigslist Joe</a></li>
+              <li><a class="footer-link" href="">Craigslist TV</a></li>
+              <li><a class="footer-link" href="">Craig connects</a></li>
+              <li><a class="footer-link" href="">Progressive directory</a></li>
+            </ul>          
+          </td>
+          <td class="footer-column-spacer"></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Icons from <a href="http://thenounproject.com/">thenounproject.com</a></p>
+  </footer>
+</body>
+</html>

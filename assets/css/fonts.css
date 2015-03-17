@@ -1,0 +1,16 @@
+/* FONTS */
+@font-face {
+  font-family: 'Klinic Slab Medium';
+  src: url(../fonts/KlinicSlabMedium.otf);
+}
+
+@font-face {
+  font-family: 'Socialico Plus';
+  src: url(../fonts/SocialicoPlus.otf);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
