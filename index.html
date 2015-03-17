@@ -9,11 +9,29 @@
   <!-- NAV BAR -->
   <div id="navbar">
     <div id="logo">craigslist</div>
-    <input type="text" placeholder="I'm looking for..." id="search-field" />
-    <input type="submit" value="search" id="search-button" />
+    <div id="search"> 
+      <div class="button" id="select-category-button">
+        Select Category
+        <select id="select-category-dropdown">
+          <option value="">Community</option>
+          <option value="">Personal</option>
+          <option value="">Housing</option>
+          <option value="">For Sale</option>
+          <option value="">Jobs</option>
+          <option value="">Discussion Forums</option>
+          <option value="">Services</option>
+          <option value="">Gigs</option>
+        </select>
+      </div>   
+      <input type="text" placeholder="I'm looking for..." id="search-field" />
+      <input type="submit" value="Search" class="button" id="search-button" />
+    </div>
     <div id="account-info">
-      <span id="username">Stuart Tusspot</span>
-      
+      <div class="button" id="post-button">Post to Craigslist</div>
+      <div id="user-photo">
+        <img class="img-scaled-wh" src="assets/img/user.png">
+      </div>
+      <div class="" id="username">Stuart Tusspot</div>
     </div>
   </div>
 
@@ -31,6 +49,7 @@
     <div class="gallery">
     <div class="hero-image">
       <img class="img-scaled-wh" src="assets/img/plastic-beach-day.jpg">
+      <div class="hero-image-description">Beautiful beachfront condo</div>
     </div>
     </div>
     <div class="left category">
@@ -39,45 +58,112 @@
     </div>
     <div class="right category">
       <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
-      <div class="category-title">Community</div>
+      <div class="category-title">Personals</div>
     </div>
     <div class="left category">
       <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
-      <div class="category-title">Community</div>
+      <div class="category-title">Housing</div>
     </div>
     <div class="right category">
       <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
-      <div class="category-title">Community</div>
+      <div class="category-title">For Sale</div>
     </div>
     <div class="left category">
       <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
-      <div class="category-title">Community</div>
+      <div class="category-title">Jobs</div>
     </div>
     <div class="right category">
       <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
-      <div class="category-title">Community</div>
+      <div class="category-title">Discussion Forums</div>
     </div>
     <div class="left category">
       <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
-      <div class="category-title">Community</div>
+      <div class="category-title">Services</div>
     </div>
     <div class="right category">
       <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
-      <div class="category-title">Community</div>
+      <div class="category-title">Gigs</div>
     </div>
-  </div>
+<!--     <div class="left category">
+      <img src="assets/img/grass.jpg" alt="" class="img-scaled-wh">
+      <div class="category-title">Resumes</div>
+    </div>
+ -->  </div>
 
   <!-- RIGHT BAR -->
-  <div class="right-sidebar">
+<!--   <div class="right-sidebar">
     
   </div>
-
+ -->
   <!-- FOOTER -->
-  <footer class="clear">
-    <a class="footer-link" href="">About</a>
+  <footer class="clearfix clear">
+<!--     <a class="footer-link" href="">About</a>
     <a class="footer-link" href="">Jobs</a>
     <a class="footer-link" href="">Contact</a>
+ -->    
+ <!-- help safety privacy feedback cl jobs terms about mobile -->
 
+ <!-- help, faq, abuse, legal
+      avoid scams & fraud
+      personal safety tips
+      terms of use
+      privacy policy
+      system status
+      about craigslist
+      craigslist is hiring in sf
+      craigslist open source
+      craigslist blog
+      best-of-craigslist
+      craigslist TV
+      "craigslist joe"
+      craig connects
+      progressive directory
+       -->
+    <table class="footer-table">
+      <tbody>
+        <tr>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-columns footer-column-title">How to use Craigslist</td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-columns footer-column-title">About Us</td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-columns footer-column-title">Extras</td>
+        </tr>
+        <tr>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-column">
+            <ul>              
+              <li><a class="footer-link" href="">Help</a></li>
+              <li><a class="footer-link" href="">Personal safety tips</a></li>
+              <li><a class="footer-link" href="">Avoid scams and fraud</a></li>
+              <li><a class="footer-link" href="">Privacy</a></li>
+              <li><a class="footer-link" href="">Terms of use</a></li>
+              <li><a class="footer-link" href="">System status</a></li>
+            </ul>
+          </td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-column">
+            <ul>
+              <li><a class="footer-link" href="">About</a></li>
+              <li><a class="footer-link" href="">We're hiring in SF!</a></li>
+              <li><a class="footer-link" href="">Blog</a></li>
+              <li><a class="footer-link" href="">Craigslist open source</a></li>
+            </ul>          
+          </td>
+          <td class="footer-column-spacer"></td>
+          <td class="footer-column">
+            <ul>
+              <li><a class="footer-link" href="">Best of Craigslist</a></li>
+              <li><a class="footer-link" href="">Craigslist Joe</a></li>
+              <li><a class="footer-link" href="">Craigslist TV</a></li>
+              <li><a class="footer-link" href="">Craig connects</a></li>
+              <li><a class="footer-link" href="">Progressive directory</a></li>
+            </ul>          
+          </td>
+          <td class="footer-column-spacer"></td>
+        </tr>
+      </tbody>
+    </table>
   </footer>
 </body>
 </html>
