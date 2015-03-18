@@ -32,6 +32,11 @@ TABLE OF CONTENTS
   left: 0;
 }
 
+.splash .img-scaled-wh {
+    top: -250px;
+    position: relative;
+}
+
 .splash-text-container {
   position: relative;
   top: 50%;
@@ -65,14 +70,13 @@ TABLE OF CONTENTS
 }
 
 .overlay {
-  /*margin: 10px;*/
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
